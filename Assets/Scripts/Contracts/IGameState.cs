@@ -3,7 +3,7 @@
 namespace Contracts
 {
     public interface IGameState<TGameState>
-        where TGameState : IGameState<TGameState>
+        where TGameState : IGameState<TGameState>, new()
     {
         void Reset();
         string ConvertToString();

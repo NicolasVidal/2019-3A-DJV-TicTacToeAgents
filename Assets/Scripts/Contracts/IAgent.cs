@@ -4,6 +4,6 @@ namespace Contracts
 {
     public interface IAgent<TGameState>
     {
-        int Act(TGameState gameState, int playerId, List<int> availableActions);
+        (bool, int) Act(TGameState gameState, int playerId, List<int> availableActions);
     }
 }
